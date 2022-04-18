@@ -8,3 +8,5 @@ for i in numbers:
         if i >= 918:
             print('Done')
             break
+        else:
+            continue
