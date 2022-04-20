@@ -4,17 +4,39 @@ inputKelvin = int(input("Masukan angka yang akan diconvert dalam kelvin : "))
 Celcius = inputKelvin - 273.15
 # membuat fungsi konversi dari kelvin ke celcius dengan parameter inputan 
 def kelvinCelcius(inputKelvin):
-    print("Konversi ke Celsius = ", Celcius, "C")
-# memanggil fungsi dengan parameter 
-kelvinCelcius(inputKelvin)
+    ''' Membuat fungsi untuk mengubah ke celcius ataupun kelvin 
+    dengan parameter inputan dari user dalam format kelvin
+    '''
+    print('')
+    print(kelvinCelcius.__doc__)
+    if True:
+        print("Konversi ke Celsius = ", Celcius, "C")
+    else:
+        print("Suhu Kelvin adalah = ", inputKelvin, "K")
+# memanggil fungsi dengan parameter Celcius 
+kelvinCelcius(Celcius)
 # mendeklarasi global variable fahrenheit untuk menghitung konversi dari celcius ke fahrenheit
 Fahrenheit = Celcius * (9/5) + 32 
 def celciusFahrenheit(Celcius):
-    print("Konversi Celcius ke Fahrenheit = ", Fahrenheit, "F")
+    ''' Membuat fungsi untuk mengubah ke Fahrenheit dari kelvin 
+     ataupun celcius
+    '''
+    print('')
+    print(celciusFahrenheit.__doc__)
+    if True:
+        print("Konversi Celcius ke Fahrenheit = ", Fahrenheit, "F")
+    else:
+        f = (inputKelvin - 273.15) * (9/5) + 32
+        print("Konversi Kelvin ke Fahrenheit = ", f, "F" )
 # memanggil fungsi konversi celcius ke fahrenheit
 celciusFahrenheit(Celcius)
 # mendefinisikan fungsi untuk konversi dari fahrenheit
 def fromFahrenheit(Celcius):
+    ''' Membuat fungsi untuk mengubah ke Fahrenheit dari kelvin 
+     ataupun celcius
+    '''
+    print('')
+    print(fromFahrenheit.__doc__)
 # menghitung variabel celcius dan kelvin dalam fungsi
     Celcius = (Fahrenheit-32) * (5/9) 
     Kelvin  = Celcius + 273.15
