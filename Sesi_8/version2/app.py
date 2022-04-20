@@ -8,6 +8,8 @@ from flask import render_template
 # local modules
 import config
 
+import connexion
+
 
 # Get the application instance
 connex_app = config.connex_app
