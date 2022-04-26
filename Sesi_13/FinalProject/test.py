@@ -10,14 +10,6 @@ connex_app.add_api("swagger.yml")
 
 class Test(unittest.TestCase):
     '''
-    Test whether read_one method has dict type
-    '''
-    def test_get_director(self):
-        self.assertIs(type(Directors.read_one(4762)), dict)
-
-    def test_get_movie(self):
-        self.assertIs(type(Movies.read_one(4762,43597)), dict)
-    '''
     Test whether read_all method has list type
     '''    
     def test_get_directors(self):

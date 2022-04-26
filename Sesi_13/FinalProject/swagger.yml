@@ -501,7 +501,7 @@ paths:
     get:
       operationId: movies.Movies.read_one
       tags:
-        - Movies
+        - Relations
       summary: Read a particular movie associated with a director
       description: Read a particular movie associated with a director
       parameters:
