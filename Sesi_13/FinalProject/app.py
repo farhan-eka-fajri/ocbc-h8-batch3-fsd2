@@ -28,4 +28,4 @@ def home():
     return render_template("home.html")
 
 if __name__ == "__main__":
-    connex_app.run(host='127.0.0.1',port=5000,debug=True)
+    connex_app.run(debug=True)

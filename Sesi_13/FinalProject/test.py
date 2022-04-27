@@ -8,7 +8,7 @@ connex_app = config.connex_app
 # Read the swagger.yml file to configure the endpoints
 connex_app.add_api("swagger.yml")
 
-class Test(unittest.TestCase):
+class TestTipe(unittest.TestCase):
     '''
     Test whether read_all method has list type
     '''    
@@ -18,7 +18,7 @@ class Test(unittest.TestCase):
     def test_get_movies(self):
         self.assertIs(type(Movies.read_all()),list)
 
-class MyTestCase(unittest.TestCase):
+class TestCaseKoneksi(unittest.TestCase):
     '''
     Test client connexion
     '''
