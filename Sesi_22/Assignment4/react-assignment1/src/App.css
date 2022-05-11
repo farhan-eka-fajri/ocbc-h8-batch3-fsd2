@@ -1,0 +1,30 @@
+.judulheader {
+  text-align: center;
+  font-size: xx-large;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.footer{
+text-align: center;
+}
+
+#title{
+  color: blue;
+  font-family: 'Trebuchet MS';
+  font-size: x-large;
+}
+
+span{
+  color: black;
+}
+
+.artikel {
+  width: auto;
+  min-height: 10px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(143, 137, 137);
+  padding: 10px;
+  border-radius: 10px;
+}

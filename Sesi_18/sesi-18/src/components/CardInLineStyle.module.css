@@ -1,0 +1,17 @@
+/* css module
+kelebihan
+1. kita tetap bisa mengimplementasika nsintaks css pada file eksternal 
+2. kita bisa isolasikan kelas yang meimiliki nama yang sama pada komponen yang berbeda
+
+
+kekurangan
+1. sama seperti objek variable css, tidak ada auto completion
+2. penerapan style pada tag kecil kemungkinannya bisa diterapkan
+
+*/
+
+
+.center{
+    text-align: center;
+    color: red;
+}

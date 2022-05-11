@@ -16,9 +16,9 @@ const Person = (props) => {
 
         // componentWillUnmount() => domponent akan dihancurkan
         // return bertindak sebagai cleanup
-        return () => {
-            console.log("anda berhasil menghancurkan komponen!!!11!!111")
-        }
+        // return () => {
+        //     console.log("anda berhasil menghancurkan komponen!!!11!!111")
+        // }
     },
     // shouldComponentUpdate()
     // kosong => useEffect akan berjalan selalu, 

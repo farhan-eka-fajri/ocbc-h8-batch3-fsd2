@@ -1,7 +1,11 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import AppStyle from './App.module.css';
+import CardExternalStyle from './components/CardExternalStyle';
 import './App.css';
 import Button from './components/Button';
 import Person from './components/Person';
+import CardInLineStyle from './components/CardInLineStyle';
+import CardObjectVariableStyle from './components/CardObjectVariableStyle';
 
 function App() {
   // ini akan digunakan sebagai layout component
@@ -11,23 +15,19 @@ function App() {
       <Button title =" FSD 2 OCBC BATCH 3" /> 
       <Button/>
       <header className="App-header">
+      <CardInLineStyle />
+      <CardObjectVariableStyle />
+
+      <div className={AppStyle.center}>Test appstylemodule</div>
+
+
         <Person name="Alex" job="fullstack dev"/>
         <Person name="Dini" job="fullstack dev"/>
-
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <CardExternalStyle />
       </header>
     </div>
+
+
   );
 }
 
