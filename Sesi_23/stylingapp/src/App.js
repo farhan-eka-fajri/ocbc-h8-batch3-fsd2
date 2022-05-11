@@ -105,7 +105,6 @@ function App() {
     <div className="App">
         <div className="container">
         <Header />
-
         <hr />
         <Content />
         <hr />

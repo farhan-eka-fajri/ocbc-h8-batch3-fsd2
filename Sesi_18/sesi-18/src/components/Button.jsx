@@ -17,31 +17,31 @@ class Button extends Component{
     }
 
     //pada saat inisialisasi props/state
-    componentDidMount(){
-        console.log('componentDidMount() => component pertama kali dibuat')
-        alert("component berhasil dibuat")
-    }
+    // componentDidMount(){
+    //     console.log('componentDidMount() => component pertama kali dibuat')
+    //     alert("component berhasil dibuat")
+    // }
 
     //shouldComponentUpdate akan bertindak sebagai conditional sebelum component di render ulang 
-    shouldComponentUpdate(){
-        //jika return true, maka component akan dirender ulang, selebihnya tidak dirender ulang
-        if(this.state.title !== ""){
-            return true
-        }
+    // shouldComponentUpdate(){
+    //     //jika return true, maka component akan dirender ulang, selebihnya tidak dirender ulang
+    //     if(this.state.title !== ""){
+    //         return true
+    //     }
 
-        return false;
-    }
+    //     return false;
+    // }
 
     //saat melakukan perubahaan pada komponen
-    componentDidUpdate(){
-        console.log('componentDidUpdate()=> component berhasil diubah')
-        alert('anda berhasil mengklik sebuah tombol!')
-    }
+    // componentDidUpdate(){
+    //     console.log('componentDidUpdate()=> component berhasil diubah')
+    //     alert('anda berhasil mengklik sebuah tombol!')
+    // }
 
     //saat load ulang browser
-    componentWillUnmount(){
-        alert('anda berhasil menghancurkan komponen')
-    }
+    // componentWillUnmount(){
+    //     alert('anda berhasil menghancurkan komponen')
+    // }
 
 
     // mendefinisikan state dengan function bisa melakukan formatting
