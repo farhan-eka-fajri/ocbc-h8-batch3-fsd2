@@ -1,19 +1,23 @@
 const Home = () => {
 
+  const login = () => {
+    // localStorage.setItem(key,value) untuk menyimpan data baru ke dalam key yang kita sebutkan di dalam parameter
+    const user = {user: 'Farhan'}
+    localStorage.setItem('auth', JSON.stringify(user))
+  }
+
+  const logout = () => {
+    localStorage.removeItem('auth')
+  }
+
     return(
     <>
          <h2>
           Edit <code>src/App.js</code> and save to reload.
         </h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-    
+          <button onClick={login}>login</button>
+          <button onClick={logout}>logout</button>
+
     
     </>)
 }

@@ -1,15 +1,16 @@
 import './App.css';
-import Hasil from './components/Hasil';
+import Antri from './components/Antri';
+import Footer from './components/Footer';
 import Judul from './components/Judul';
-import Masukan from './components/Masukan';
+
 
 
 function App() {
   return (
     <>
     <Judul />
-    <Masukan />
-    <Hasil />
+    <Antri />
+    <Footer />
 
     </>
 

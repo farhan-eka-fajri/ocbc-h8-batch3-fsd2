@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import ProfileDetails from './pages/ProfileDetails';
 import NotFound from './pages/NotFound';
+import ProtectedPage from './pages/ProtectedPage';
 
 function App() {
   const activeStyle = {
@@ -25,6 +26,7 @@ function App() {
           <li>
             <NavLink to={"/"} style={checkIsActive}>Home</NavLink>
             <NavLink to={"/profile"} style={checkIsActive}>Profile</NavLink>
+            <NavLink to={"/protected"} style={checkIsActive}>Protected</NavLink>
           </li>
         </ul>
       </header>
@@ -59,6 +61,9 @@ function App() {
 
 
         </Route>
+
+        <Route path='/protected' element={<ProtectedPage/>}/>
+
         {/* routing dengan star segment (wildcard) mereplace */}
         <Route path='*' element={<NotFound/>} />
       </Routes>
