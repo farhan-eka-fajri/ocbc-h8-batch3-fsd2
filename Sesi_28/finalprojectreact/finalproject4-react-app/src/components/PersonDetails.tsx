@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { connect, useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
-import logo from '../logo.svg';
+import readonelogo from '../guest-male.png';
 import '../App.css';
 import { fetchPeople } from "../actions/personDebugActions";
 import Header from "./Header"
@@ -41,7 +41,7 @@ function PersonDetails({ personData, fetchPeople }: any) {
                 <div className="card">
                     <div className="card-image">
                         <figure className="image ">
-                            <img src={logo} className="App-logo" alt="logo" />
+                            <img src={readonelogo} className="App-logo" alt="logo" />
 
                         </figure>
                     </div>
@@ -86,7 +86,7 @@ function PersonDetails({ personData, fetchPeople }: any) {
                                 </div></div>
                         </div>
                         <div className="content">
-                            <button className="button is-link" onClick={() => navigate('/')}>Go Back</button>
+                            <button className="button is-link" onClick={() => navigate('/')}>Back</button>
 
                         </div>
                     </div>

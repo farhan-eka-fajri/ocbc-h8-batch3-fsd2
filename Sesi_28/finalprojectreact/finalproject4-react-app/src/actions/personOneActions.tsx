@@ -1,9 +1,9 @@
 import axios from 'axios'
-import {
-    FETCH_PERSON_REQUEST,
-    FETCH_PERSON_SUCCESS,
-    FETCH_PERSON_FAILURE
-} from '../types/personOneTypes'
+
+
+const FETCH_PERSON_REQUEST = 'FETCH_PERSON_REQUEST'
+const FETCH_PERSON_SUCCESS = 'FETCH_PERSON_SUCCESS'
+const FETCH_PERSON_FAILURE = 'FETCH_PERSON_FAILURE'
 
 export const fetchPerson = (key: any) => {
     return async (dispatch: any) => {

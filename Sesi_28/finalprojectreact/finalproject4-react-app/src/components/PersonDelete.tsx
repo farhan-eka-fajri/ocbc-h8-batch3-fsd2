@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { connect, useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import  { useEffect } from "react";
+import { connect, useDispatch, } from "react-redux";
+import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { deletePeople } from "../actions/personDeleteActions";
 import { fetchPeople } from "../actions/personDebugActions";

@@ -1,10 +1,10 @@
 import axios from 'axios'
-import {
-    FETCH_PEOPLE_REQUEST,
-    FETCH_PEOPLE_SUCCESS,
-    FETCH_PEOPLE_FAILURE
-} from '../types/personDebugTypes'
 
+
+
+const FETCH_PEOPLE_REQUEST = 'FETCH_PEOPLE_REQUEST'
+const FETCH_PEOPLE_SUCCESS = 'FETCH_PEOPLE_SUCCESS'
+const FETCH_PEOPLE_FAILURE = 'FETCH_PEOPLE_FAILURE'
 export const fetchPeople = () => {
     return async (dispatch: any) => {
         dispatch(fetchPeopleRequest())

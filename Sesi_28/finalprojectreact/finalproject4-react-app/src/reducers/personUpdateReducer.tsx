@@ -1,8 +1,6 @@
-import {
-    UPDATE_PEOPLE_REQUEST,
-    UPDATE_PEOPLE_SUCCESS,
-    UPDATE_PEOPLE_FAILURE
-} from '../types/personUpdateTypes'
+const UPDATE_PEOPLE_REQUEST = 'UPDATE_PEOPLE_REQUEST'
+const UPDATE_PEOPLE_SUCCESS = 'UPDATE_PEOPLE_SUCCESS'
+const UPDATE_PEOPLE_FAILURE = 'UPDATE_PEOPLE_FAILURE'
 
 const initialState = {
     loading: false,

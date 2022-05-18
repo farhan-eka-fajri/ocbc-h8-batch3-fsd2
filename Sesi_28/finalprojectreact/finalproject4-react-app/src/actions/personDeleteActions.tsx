@@ -1,9 +1,9 @@
 import axios from 'axios'
-import {
-    DELETE_PEOPLE_REQUEST,
-    DELETE_PEOPLE_SUCCESS,
-    DELETE_PEOPLE_FAILURE
-} from '../types/personDeleteTypes'
+
+
+const DELETE_PEOPLE_REQUEST = 'DELETE_PEOPLE_REQUEST'
+const DELETE_PEOPLE_SUCCESS = 'DELETE_PEOPLE_SUCCESS'
+const DELETE_PEOPLE_FAILURE = 'DELETE_PEOPLE_FAILURE'
 
 export const deletePeople = (key: any) => {
     return (dispatch: any) => {

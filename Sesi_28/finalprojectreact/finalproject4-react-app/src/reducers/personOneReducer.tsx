@@ -1,8 +1,6 @@
-import {
-    FETCH_PERSON_REQUEST,
-    FETCH_PERSON_SUCCESS,
-    FETCH_PERSON_FAILURE
-} from '../types/personOneTypes'
+const FETCH_PERSON_REQUEST = 'FETCH_PERSON_REQUEST'
+const FETCH_PERSON_SUCCESS = 'FETCH_PERSON_SUCCESS'
+const FETCH_PERSON_FAILURE = 'FETCH_PERSON_FAILURE'
 
 const initialState = {
     loading: false,

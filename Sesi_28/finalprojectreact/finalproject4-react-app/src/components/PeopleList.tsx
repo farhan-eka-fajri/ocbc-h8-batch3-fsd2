@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
 import { fetchPeople } from '../actions/personDebugActions'
 import styled from 'styled-components'
 import Header from './Header'
 import '@fortawesome/fontawesome-free/css/all.min.css'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'
 
 let Button1 = styled.div`
     margin-bottom: 20px;
@@ -71,13 +71,15 @@ function PeopleList({ personData, fetchPeople }: any) {
                 </div>
                 <div style={{ width: '700px', margin: ' 0 auto' }}>
                     <table className="table is-striped is-hoverable is-fullwidth" style={{ textAlign: 'left' }}>
-                        <thead>
-                            <tr>
+                        <thead style={{backgroundColor: 'burlywood', width: '700px', margin: ' 0 auto' }}>
+                            <tr style={{backgroundColor: 'burlywood', width: '700px', margin: ' 0 auto' }}>
                                 <th>No</th>
                                 <th>Key</th>
                                 <th>First Name</th>
                                 <th>Last Name</th>
-                                <th>Actions</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -91,15 +93,14 @@ function PeopleList({ personData, fetchPeople }: any) {
                                         </td>
                                         <td>
                                                 <Button1 className="button is-warning is-focused is-centered" onClick={() => handleEdit(person.key, person.firstName, person.lastName)}>Edit</Button1>
-                                            </td>
-                                            <td>
-                                                <Button1 className="button is-primary is-focused is-centered" onClick={() => handleOne(person.key, person.firstName, person.lastName)}>Read Details</Button1>
-                                            </td>
-                                            </tr>
-                                    })
+                                        </td>
+                                        <td>
+                                                <Button1 className="button is-primary is-focused is-centered" onClick={() => handleOne(person.key, person.firstName, person.lastName)}>Read One</Button1>
+                                        </td>
+                                        </tr>
+                                        })
 
-                                            }
-                            
+                                            }               
                         </tbody>
                     </table>
                     <div style={{ marginBottom: "15px" }}></div>

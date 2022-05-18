@@ -1,9 +1,9 @@
 import axios from 'axios'
-import {
-    CREATE_PEOPLE_REQUEST,
-    CREATE_PEOPLE_SUCCESS,
-    CREATE_PEOPLE_FAILURE
-} from '../types/personCreateTypes'
+
+
+const CREATE_PEOPLE_REQUEST = 'CREATE_PEOPLE_REQUEST'
+const CREATE_PEOPLE_SUCCESS = 'CREATE_PEOPLE_SUCCESS'
+const CREATE_PEOPLE_FAILURE = 'CREATE_PEOPLE_FAILURE'
 
 export const createPeople = (newInput: any) => {
     return async (dispatch: any) => {
